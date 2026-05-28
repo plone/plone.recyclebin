@@ -1,9 +1,9 @@
 """Interfaces for the Plone Recycle Bin functionality."""
 
 from plone.base import PloneMessageFactory as _
-from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 from zope import schema
 from zope.interface import Interface
+from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 
 class IBrowserLayer(IDefaultBrowserLayer):

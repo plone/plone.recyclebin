@@ -4,11 +4,11 @@ from plone.app.testing import login
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import TEST_USER_NAME
+from plone.recyclebin.browser.recyclebin import RecycleBinView
 from plone.recyclebin.interfaces import IRecycleBin
+from plone.recyclebin.interfaces import IRecycleBinControlPanelSettings
 from plone.recyclebin.testing import INTEGRATION_TESTING
 from plone.registry.interfaces import IRegistry
-from plone.recyclebin.browser.recyclebin import RecycleBinView
-from plone.recyclebin.interfaces import IRecycleBinControlPanelSettings
 from zope.component import getUtility
 
 import unittest

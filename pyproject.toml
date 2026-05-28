@@ -34,25 +34,23 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
-    "Products.CMFPlone",
-    "plone.api",
+    "plone.base",
+    "plone.registry",
+    "Products.CMFCore",
+    "Products.statusmessages",
+    "z3c.form",
+    "Zope",
 ]
 
 [project.optional-dependencies]
 test = [
-    "horse-with-no-namespace",
+    "plone.app.contenttypes",
     "plone.app.testing",
-    "plone.classicui","plone.restapi[test]",
     "pytest",
-    "pytest-cov",
     "pytest-plone>=1.0.0a2",
-]
-release = [
-    "zest.releaser[recommended]",
-    "zestreleaser.towncrier",
-    "zest.pocompile",
 ]
 
 [project.urls]
