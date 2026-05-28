@@ -38,8 +38,6 @@ classifiers = [
 dependencies = [
     "Products.CMFPlone",
     "plone.api",
-
-    "z3c.jbot",
 ]
 
 [project.optional-dependencies]
